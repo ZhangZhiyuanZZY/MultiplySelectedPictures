@@ -24,7 +24,7 @@
                                 </constraints>
                                 <state key="normal" title="单张图片"/>
                                 <connections>
-                                    <action selector="onePictureClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FO-mt-KuU"/>
+                                    <action selector="onePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCQ-nT-d6D"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVA-aC-iVs">
