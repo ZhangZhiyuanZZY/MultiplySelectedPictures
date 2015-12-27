@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqz-Pj-aY5">
+                                <rect key="frame" x="62" y="58" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ABz-4V-Xrf"/>
+                                </constraints>
+                                <state key="normal" title="单张图片"/>
+                                <connections>
+                                    <action selector="onePictureClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FO-mt-KuU"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVA-aC-iVs">
+                                <rect key="frame" x="0.0" y="96" width="320" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="AIS-ie-iQ6"/>
+                                    <constraint firstAttribute="height" constant="375" id="uUG-OF-ttT"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mly-TC-1jQ">
+                                <rect key="frame" x="204" y="58" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HzO-p1-lUd"/>
+                                </constraints>
+                                <state key="normal" title="多张图片"/>
+                                <connections>
+                                    <action selector="MultiplisePictureClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJj-wY-iQ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HVA-aC-iVs" firstAttribute="top" secondItem="lqz-Pj-aY5" secondAttribute="bottom" constant="8" id="40W-JM-rM7"/>
+                            <constraint firstItem="HVA-aC-iVs" firstAttribute="top" secondItem="Mly-TC-1jQ" secondAttribute="bottom" constant="8" id="EaS-7R-fjW"/>
+                            <constraint firstItem="Mly-TC-1jQ" firstAttribute="leading" secondItem="lqz-Pj-aY5" secondAttribute="trailing" constant="82" id="Fh1-LJ-BXU"/>
+                            <constraint firstItem="HVA-aC-iVs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KhS-CL-EsK"/>
+                            <constraint firstItem="lqz-Pj-aY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="62" id="RNR-wg-etF"/>
+                            <constraint firstItem="HVA-aC-iVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g5u-J0-W4C"/>
+                            <constraint firstAttribute="trailing" secondItem="Mly-TC-1jQ" secondAttribute="trailing" constant="56" id="kfD-21-koB"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="HVA-aC-iVs" id="ufn-pZ-Bd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="235"/>
+        </scene>
+    </scenes>
+</document>
